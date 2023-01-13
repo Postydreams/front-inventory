@@ -3,9 +3,9 @@
     <h2 class="alinear">Listado de Categorías</h2>
     <mat-card-header>
         <div>
-            <mat-form-field hintLabel="Busque la categoria" appearance="fill">
-                <mat-label>Buscar Categorías</mat-label>
-                <input matInput #input>
+            <mat-form-field hintLabel="Busque la categoria por ID" appearance="fill">
+                <mat-label>Buscar Categorías por ID</mat-label>
+                <input matInput #input (keyup)="buscar(input.value)">
 
             </mat-form-field>
         </div>
