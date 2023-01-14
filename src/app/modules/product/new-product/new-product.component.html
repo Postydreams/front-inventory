@@ -9,11 +9,11 @@
             </mat-form-field>
 
             <mat-form-field>
-                <textarea matInput type="number" placeholder="Precio" formControlName="price" required></textarea>
+                <input matInput type="number" placeholder="Precio" formControlName="price" required/>
             </mat-form-field>
 
             <mat-form-field>
-                <textarea matInput type="number" placeholder="Cantidad" formControlName="quantity" required></textarea>
+                <input matInput type="number" placeholder="Cantidad" formControlName="quantity" required/>
             </mat-form-field>
 
             <mat-form-field>
@@ -36,8 +36,8 @@
                         (change)="onFileChanged($event)"
                         type="file"
                         formControlName="picture"   
-                        class="input-file" 
-                />
+                        class="input-file"/>
+                        <span> {{ nameImg }} </span>
             </div>
 
 
