@@ -59,4 +59,8 @@ export class NewProductComponent implements OnInit {
       })
   }
 
+  onFileChanged(event: any){
+    
+  }
+
 }
